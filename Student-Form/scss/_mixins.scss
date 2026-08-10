@@ -1,0 +1,57 @@
+// Responsive design
+
+@mixin screen($size) {
+
+    @if $size == mobile {
+
+        @media (max-width: 768px) {
+            @content;
+        }
+
+    }
+
+    @else if $size == desktop {
+
+        @media (min-width: 769px) {
+            @content;
+        }
+
+    }
+}
+
+@mixin mobile-font {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+}
+
+// Mobile form layout
+
+@mixin mobile-form {
+
+    form {
+        padding: 20px;
+        width: 80%;
+        max-width: 80%;
+    }
+
+}

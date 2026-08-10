@@ -1,0 +1,104 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background: $background;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    line-height: 1.6;
+    letter-spacing: 2px;
+}
+
+header {
+    background: $primary;
+    color: $secondary;
+    text-align: center;
+    padding: 10px;
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        margin: 18px;
+        font-size: 18px;
+    }
+
+    @include screen(mobile) {
+        @include mobile-font;
+    }
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    padding: 80px 40px;
+
+    form {
+        background: $background;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        width: 400px;
+        max-width: 90%;
+    }
+
+    label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    textarea {
+        height: 120px;
+        resize: vertical;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 20px;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        background: $primary;
+        color: $secondary;
+        cursor: pointer;
+        font-size: 16px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    #confirmation {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+        @include screen(mobile) {
+        @include mobile-font;
+        @include mobile-form;
+    }
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: $background;
+}

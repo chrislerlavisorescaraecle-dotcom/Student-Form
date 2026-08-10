@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  background: white;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+  line-height: 1.6;
+  letter-spacing: 2px;
+}
+
+header {
+  background: red;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+header h1 {
+  font-size: 40px;
+}
+header p {
+  margin: 18px;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 32px;
+  }
+  header p {
+    font-size: 16px;
+  }
+  header label {
+    font-size: 14px;
+  }
+  header input,
+  header textarea {
+    font-size: 14px;
+  }
+  header button {
+    font-size: 14px;
+  }
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  padding: 80px 40px;
+}
+.contact-form form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 90%;
+}
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.contact-form textarea {
+  height: 120px;
+  resize: vertical;
+}
+.contact-form button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: red;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+.contact-form button:hover {
+  opacity: 0.8;
+}
+.contact-form #confirmation {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .contact-form h1 {
+    font-size: 32px;
+  }
+  .contact-form p {
+    font-size: 16px;
+  }
+  .contact-form label {
+    font-size: 14px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+  .contact-form button {
+    font-size: 14px;
+  }
+  .contact-form form {
+    padding: 20px;
+    width: 80%;
+    max-width: 80%;
+  }
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+}/*# sourceMappingURL=style.css.map */
