@@ -1,7 +1,9 @@
+//DOM
 const contactForm = document.getElementById("contactForm");
 const pageHeading = document.getElementById("pageHeading");
 const confirmation = document.getElementById("confirmation");
 
+//Event
 contactForm.addEventListener("submit", function(event) {
 
     event.preventDefault();
